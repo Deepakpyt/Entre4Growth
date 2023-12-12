@@ -4,9 +4,14 @@
     text-align: center;   
     justify-content: center;
 }
+.card-pointer {
+    cursor: pointer;
+  }
 .mid-item{
-    text-align: center;
-    margin-top: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img-fluid{
     border-radius: 20px;

@@ -6,15 +6,23 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Button from "react-bootstrap/Button";
 import {
-  BsArrowRightSquare,
+  BsArrowRightSquare,BsPower,BsBuildingAdd,
 } from "react-icons/bs";
 
-export const LandingPage = () => {
+export const LandingPage = ({ theme }) => {
+  const cardStyle = {
+    height: '60%',
+    backgroundColor: theme === 'dark' ? '#333' : '#fff',
+    color: theme === 'dark' ? '#fff' : '#333',
+  };
+
   return (
     <div className="container">
+      <div className="viewport">
       <div className="row">
         <h1>Entre4Growth</h1>
-        <div className="main-title"><h3>One Stop Platform for Budding Entrepreneurs</h3></div>
+        <div className="main-title">
+          <h3>One Stop Platform for Budding Entrepreneurs</h3></div>
       </div>
       <div className="row">
         <div className="col-md-12 col-sm-6">
@@ -30,7 +38,7 @@ export const LandingPage = () => {
         <div className="col-md-4 col-sm-6">
           {/* <p>We offer amazing services for entreprenuers</p> */}
           <CardGroup>
-            <Card>
+            <Card style={cardStyle}>
               <Card.Img
                 variant="top"
                 src="./account.png"
@@ -43,6 +51,7 @@ export const LandingPage = () => {
                   <p>Log in and open doors to growth</p>
                     <a href="/login">
                       <Button variant="primary" size="lg">
+                      <BsPower size={25}/> 
                         Login
                       </Button>
                     </a>
@@ -54,7 +63,7 @@ export const LandingPage = () => {
         </div>
         <div className="col-md-4 col-sm-6">
           <CardGroup>
-            <Card>
+          <Card style={cardStyle}>
               <Card.Img
                 variant="top"
                 src="./entrepreneurship.png"
@@ -67,8 +76,8 @@ export const LandingPage = () => {
                   <p>Get started and pave your path to success</p>
                     <a href="/signup">
                       <Button variant="primary" size="lg">
-                      <BsArrowRightSquare/>  &nbsp;
-                          Get Started
+                      <BsArrowRightSquare/>
+                      Get onboard
                       </Button>
                     </a>
                   </div>
@@ -79,7 +88,7 @@ export const LandingPage = () => {
         </div>
         <div className="col-md-4 col-sm-6">
           <CardGroup>
-            <Card>
+          <Card style={cardStyle}>
               <Card.Img
                 variant="top"
                 src="./investor.png"
@@ -89,15 +98,17 @@ export const LandingPage = () => {
                 <Card.Title>Become an Investor</Card.Title>
                 <Card.Text>
                   <div className="mb-3">
-                  <p>Invest with us for access promising opportunities </p>
+                  <p>Want to invest ? Invest with us </p>
                     <a href="/investor-signup">
                       <Button variant="primary" size="lg">
+                      <BsBuildingAdd size={25}/>
                         SignUp
                       </Button>
                     </a>
                     &nbsp;
                     <a href="/investor-login">
                       <Button variant="primary" size="lg">
+                      <BsPower size={25}/> 
                         Login
                       </Button>
                     </a>
@@ -108,6 +119,8 @@ export const LandingPage = () => {
           </CardGroup>
         </div>
       </div>
+      </div>
     </div>
   );
 };
+export default LandingPage;

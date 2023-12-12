@@ -6,31 +6,24 @@ import './About.css';
 const teamMembers = [
   {
     name: 'Arpit Bhatnagar',
-    role: 'Co-founder & CEO',
+    role: 'Lead Developer',
     description:
       'Passionate about entrepreneurship and technology, Arpit is dedicated to helping young entrepreneurs turn their ideas into successful businesses.',
-    image: './Arpit_bhatnagar.jpg', 
-  },
-  {
-    name: 'Deepak Srivastava',
-    role: 'Co-founder & COO',
-    description:
-      'With a background in business operations, Jane ensures that our platform runs smoothly and efficiently. Her focus is on providing entrepreneurs with the best resources to foster growth.',
-    image: './Deepak_Srivastava.jpeg', 
+    image: '/about/Arpit_bhatnagar.jpg', 
   },
   {
     name: 'Ashutosh Verma',
-    role: 'Lead Developer',
-    description:
-      'Michael is the tech guru behind our platform. His expertise in web development ensures that our users have a seamless experience while using our tools and resources.',
-    image: 'Ashutosh_Verma.jpeg', 
+    role: 'Developer',
+    // description:
+    //   'Michael is the tech guru behind our platform. His expertise in web development ensures that our users have a seamless experience while using our tools and resources.',
+    image: '/about/Ashutosh_Verma.jpeg', 
   },
   {
     name: 'Dipika Borse',
-    role: 'Marketing Specialist',
-    description:
-      'Emily is responsible for spreading the word about our platform. Her creative marketing strategies help us reach budding entrepreneurs who can benefit from our services.',
-    image: 'Dipika_Borse.jpeg', 
+    role: 'Developer',
+    // description:
+    //   'Emily is responsible for spreading the word about our platform. Her creative marketing strategies help us reach budding entrepreneurs who can benefit from our services.',
+    image: '/about/Dipika_Borse.jpeg', 
   },
 ];
 export const About = () => {
@@ -52,7 +45,7 @@ export const About = () => {
         <h2 className='meet'>Meet Our Team</h2>
         <Row>
           {teamMembers.map((member, index) => (
-            <Col key={index} md={3} sm={6}>
+            <Col key={index} md={4} sm={6}>
               <TeamMember member={member} />
             </Col>
           ))}

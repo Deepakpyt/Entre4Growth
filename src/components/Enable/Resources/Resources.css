@@ -1,6 +1,133 @@
-.content {
-    flex: 1;
+.header1{
+    background-color: gray;
+}
+.resources{
+    margin-top: 5px;
+}
+.search{
+    width: 300px;
+    height: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+.tags{
+ 
+    color: #fff;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  20px;
+}
+ul li a{
+    color:#3498db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul li a:hover{
+    color: gray;
+    background-color: white;
+}
+h1 {
+    color: #3498db;
+   
+}
+h3 {
+    color: #3498db;
+
+}
+
+h2{
+    color: #3498db;
+}
+.first-img{
+    width: 350px;
+    height: 200px;
+    
+}
+/* .art{
+    margin: 40px 20px ;
+    display: flex;
+    justify-content: space-between;
+} */
+.third-img{
+    width: 900px;
+    height: 500px;
+    align-items: center;
+}
+.first-article{
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+}
+.second-img{
+    width: 900px;
+    height: 500px;
+    align-items: center;
+}
+.yotube-box{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 100px auto; */
+  
   }
-  .xxz{
-    min-height: 100vh;
+  iframe{
+    margin: 10px 10px 10px 10px;
+
   }
+.blg-img{
+    width:400px;
+    height: 2000px;
+    
+}
+.art1{
+    margin: 40px 20px ;
+    display: flex;
+    justify-content: space-between;
+}
+.card_img{
+    
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out; 
+}
+.card_img:hover{
+    transform: scale(1.1);
+
+}
+.centre_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-article{
+   margin-left: 2rem;
+   margin-right: 2rem;
+}
+.second-img{
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out; 
+    width: 700px;
+    
+    align-items: center;
+}
+.second-img:hover{
+    transform: scale(1.1);
+
+}
+.second-article{
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+.fourth-article{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
